@@ -123,11 +123,11 @@ class game():
                     sys.exit()
             for x in self.blocks:
                 self.screen.blit(x[0], x[1])
-            txts = pg.font.SysFont('Courier New', 50).render('ИГРА ОКНЧЕНА  СЧЁТ:', True, (255, 255, 255))
+            txts = pg.font.SysFont('Courier New', 50).render('ИГРА ОКНЧЕНА  СЧЁТ:', True, (0, 0, 0))
             txtrect = txts.get_rect()
             txtrect.topleft = (20, 150)
             self.screen.blit(txts, txtrect)
-            txts = pg.font.SysFont('Courier New', 50).render(str(self.snake.score), True, (255, 255, 255))
+            txts = pg.font.SysFont('Courier New', 50).render(str(self.snake.score), True, (0, 0, 0))
             txtrect = txts.get_rect()
             txtrect.topleft = (600, 150)
             self.screen.blit(txts, txtrect)
